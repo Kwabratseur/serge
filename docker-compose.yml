@@ -8,7 +8,7 @@ services:
       target: release
     volumes:
       - datadb:/data/db
-      - weights:/usr/src/app/weights/
+      - /home/jeroen/git/GPTModels:/usr/src/app/weights/
       - /etc/localtime:/etc/localtime:ro 
     ports:
       - "8008:8008"
